@@ -3,7 +3,7 @@
     "n_gpu": 1,
 
     "arch": {
-        "type": "MnistModel",
+        "type": "AlexNet",
         "args": {}
     },
     "data_loader": {
@@ -24,7 +24,7 @@
             "amsgrad": true
         }
     },
-    "loss": "nll_loss",
+    "loss": "CrossEntropyLoss",
     "metrics": [
         "accuracy", "top_k_acc"
     ],
